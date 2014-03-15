@@ -69,7 +69,7 @@ class Connection {
     private function makeConString() {
         $str = "$this->dbms:host=$this->host";
         if ($this->language === "DML") {
-            $str += ";dbname=$this->dataBase";
+            $str .= ";dbname=$this->dataBase";
         }
         return $str;
     }
