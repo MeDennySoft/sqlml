@@ -50,7 +50,6 @@ entonces podremos evitarnos poner el nombre de la tabla como un argumento más.
 
 
 INSTANCIANDO LA CLASE
-
 Hacemos la instancia de la clase de la siguiente manera en php:
 $ sqlCollection = new \sqllayer\SqlCollection($cfg);
 
