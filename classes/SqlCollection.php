@@ -147,8 +147,8 @@ class SqlCollection {
         return $STH;
     }
 
-    public function set_reg($cond = false, $table = false) {
-        $arg = array('col' => $this->columns, 'vals' => $this->placeHolders, 'cond' => $cond, 'table' => $table);
+    public function set_reg($table = false) {
+        $arg = array('col' => $this->columns, 'vals' => $this->placeHolders, 'cond' => false, 'table' => $table);
         $type = "set_reg";
         $r = $this->queryExecutor($type, $arg);
         unset($arg);

@@ -1,5 +1,15 @@
 <?php
-
+/*
+ * ================================================
+ *  BY DANIEL V. MORALES
+ * ------------------------------------------------
+ * medennysoft@outlook.com
+ * SQLML:
+ *       https://github.com/MeDennySoft/sqlml
+ * ------------------------------------------------
+ *      10/02/2014
+ * ================================================
+ */
 namespace sqllayer;
 
 class Connection {
@@ -77,6 +87,9 @@ class Connection {
     public function getInstance() {
         return $this->connection;
     }
-
+    
+    public function __destruct() {
+        $this->connection = null;
+    }
 }
 ?>
